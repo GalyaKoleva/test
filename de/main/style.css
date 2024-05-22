@@ -1,0 +1,263 @@
+@media all and (max-width: 1600px) { 
+@import url('typography.css');
+
+/* 
+ .background { 
+    text-align: center;
+    background-image: conic-gradient(#f7006b 50deg,  #fbf45f 100deg, lime 200deg, aqua, blue, magenta, red);
+} */
+
+body{
+    background: url("C:/Users/Galya/Desktop/test/main/img/background.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    order: 3;
+    flex: 0 0 37%;
+}
+
+.second-nav{
+    display: flex;
+    position: relative;
+    order: 4;
+    justify-content: end;
+}
+
+.second-nav>ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    flex: 0 0 96%;
+    gap: 2%;
+}
+
+.second-nav>ul>li{
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 20%;
+}
+
+body > header > nav > ul > li:nth-child(2){
+    flex: 0 0 35%; 
+}
+body > header > nav > ul > li:nth-child(3){
+    flex: 0 0 35%; 
+}
+
+.navbar{
+    display: flex;
+    flex: 0 0 8%;
+}
+
+#navbar {
+    overflow: hidden;
+    font-family: Arial;
+    background: transparent;
+    position: absolute;
+    top: 0;
+}
+
+/* The dropdown container */
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+
+  /* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+  /* Dropdown content (hidden by default) */
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style-type: none;
+}
+
+ /* Links inside the dropdown  */
+.dropdown-content a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+  /* Add a red background color to navbar links on hover */
+#navbar a:hover, .dropdown:hover .dropbtn{
+    background-color: red;
+}
+
+  /* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover{
+    background-color: #ddd;
+}
+  
+  /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content{
+    display: block;
+    position: relative;
+    top: 0;
+}
+
+.logos{ 
+    display: flex;
+    flex: 0 0 10%;
+}
+
+.logo-lng{
+    display: flex;
+    flex: 0 0 100%;
+    align-items: baseline;
+}
+
+.button-uk{background: url('http://www.freeimageslive.co.uk/files/images006/union_flag.thumbnail.jpg');}
+.button-ru{background: url('C:/Users/Galya/Desktop/test/main/img/russia.png');}
+.button-it{background: url('C:/Users/Galya/Desktop/test/main/img/italian-flag.png');}
+.button-de{background: url('C:/Users/Galya/Desktop/test/main/img/germany-flag.png');}
+.button-fr{background: url('C:/Users/Galya/Desktop/test/main/img/Flag_of_France.png');}
+
+.button-uk,
+.button-ru,
+.button-it,
+.button-de,
+.button-fr{
+    background-size: cover;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+    margin-right: 6px;
+    border: none;
+}
+
+.button-uk{
+    height: 33px;
+    position: relative;
+    top: -8px;
+}
+
+.button-de{
+    height: 65px;
+    position: relative;
+    top: 8px;
+}
+
+.button-fr{
+    height: 32px;
+    position: relative;
+    top: -10px;
+}
+
+.button-uk:hover,
+.button-ru:hover,
+.button-it:hover,
+.button-de:hover,
+.button-fr:hover{
+    cursor: pointer;
+}
+main{
+    display: flex;
+}
+
+h2{
+    display: flex;
+    flex-flow: wrap row;
+    width: 14%;
+    position: absolute;
+    top: 15%; left: 33%;
+}
+
+.inline-fourth{
+    display:flex;
+    position: relative;
+    top: 100px;
+    left: 65%;
+    width: 30%;
+}
+
+.inline-fourth>form{
+    background: rgb(245,241,212);
+    color: black;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    border-color: azure;
+    border-width: 8px;
+    width: 90%;
+}
+
+input[type=submit]{
+    margin: 0 auto;
+    height: 30px;
+    width: 130px;
+}
+
+input:checked{
+    border: none;
+    outline: 2px solid deeppink;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+    background: white;
+}
+
+footer>p{
+    color:black;
+    text-align: center;
+}
+
+[class*="fa-"]{
+    font-size: 25px;
+    background: transparent;
+    color: black;
+    position: relative;
+    z-index: 600;
+}
+
+.love{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-top: 15px;
+}
+
+body > main > section > form > fieldset > input[type=submit]{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 55px;
+}
+
+
+} 

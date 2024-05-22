@@ -1,0 +1,447 @@
+@media all and (max-width: 1600px) { 
+@import url('typography.css');
+
+body{
+    background: url("C:/Users/Galya/Desktop/test/main/img/background.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    background: transparent;
+    padding-bottom: 30px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    order: 3;
+    flex: 0 0 37%;
+}
+
+.second-nav{
+    display: flex;
+    position: relative;
+    order: 4;
+    justify-content: end;
+}
+
+.second-nav>ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    flex: 0 0 96%;
+    gap: 2%;
+}
+
+.second-nav>ul>li{
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 20%;
+}
+
+body > header > nav > ul > li:nth-child(2){
+    flex: 0 0 25%; 
+}
+body > header > nav > ul > li:nth-child(3){
+    flex: 0 0 25%; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    border-color: azure;
+    border-width: 8px;
+    width: 90%;
+}
+
+input[type=submit]{
+    margin: 0 auto;
+    height: 30px;
+    width: 130px;
+}
+
+input:checked{
+    border: none;
+    outline: 2px solid deeppink;
+}
+
+.navbar{
+    display: flex;
+    flex: 0 0 8%;
+}
+
+#navbar {
+    overflow: hidden;
+    font-family: Arial;
+    background: transparent;
+    position: absolute;
+    top: 0;
+}
+
+/* The dropdown container */
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+
+  /* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+  /* Dropdown content (hidden by default) */
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style-type: none;
+}
+
+ /* Links inside the dropdown  */
+.dropdown-content a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+  /* Add a red background color to navbar links on hover */
+#navbar a:hover, .dropdown:hover .dropbtn{
+    background-color: red;
+}
+
+  /* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover{
+    background-color: #ddd;
+}
+  
+  /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content{
+    display: block;
+    position: relative;
+    top: 0;
+}
+
+.logos{ 
+    display: flex;
+    flex: 0 0 10%;
+}
+
+.logo-lng{
+    display: flex;
+    flex: 0 0 100%;
+    align-items: baseline;
+}
+
+.button-uk{background: url('http://www.freeimageslive.co.uk/files/images006/union_flag.thumbnail.jpg');}
+.button-ru{background: url('C:/Users/Galya/Desktop/test/main/img/russia.png');}
+.button-it{background: url('C:/Users/Galya/Desktop/test/main/img/italian-flag.png');}
+.button-de{background: url('C:/Users/Galya/Desktop/test/main/img/germany-flag.png');}
+.button-fr{background: url('C:/Users/Galya/Desktop/test/main/img/Flag_of_France.png');}
+
+.button-uk,
+.button-ru,
+.button-it,
+.button-de,
+.button-fr{
+    background-size: cover;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+    margin-right: 6px;
+    border: none;
+}
+
+.button-uk{
+    height: 33px;
+    position: relative;
+    top: -8px;
+}
+
+.button-de{
+    height: 65px;
+    position: relative;
+    top: 8px;
+}
+
+.button-fr{
+    height: 32px;
+    position: relative;
+    top: -10px;
+}
+
+.button-uk:hover,
+.button-ru:hover,
+.button-it:hover,
+.button-de:hover,
+.button-fr:hover{
+    cursor: pointer;
+}
+
+#forms{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+table{
+    table-layout: fixed;
+}
+
+details{
+    color: blueviolet;
+}
+
+footer{
+    bottom: 0;
+    width: 98%;
+    background: white;
+    margin: 0 auto;
+    position: relative;
+    bottom: -16px;
+}
+
+footer>p{
+    color:black;
+    text-align: center;
+}
+
+[class*="fa-"]{
+    font-size: 25px;
+    background: transparent;
+    color: black;
+    position: relative;
+    z-index: 600;
+}
+
+.love{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-top: 15px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.calendar{
+    background: #bbeaff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    flex: 1 0 95%;
+    margin-top: 63px;
+    margin-bottom: 15px;
+}
+
+.side-first header,
+.side-first section div{
+    border: 2px solid black;
+    text-align: center;
+    line-height: 45px;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+}
+
+.side-first header,
+.side-first section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    width: 100%;
+}
+
+.side-second{
+    display: flex;
+    flex-direction: column;
+}
+
+#width,
+#width2{
+    width: 49.5%;
+}
+
+textarea{
+    columns: 20;
+    height: 97px;
+}
+
+
+#forms {
+    display: flex;
+    background-color: antiquewhite;
+    width: 86%;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 95px;
+    justify-content: center;
+    margin: 0 10%;
+} 
+
+#males{
+    color: blue;
+}
+#females{
+    color: red;
+}
+
+#sinai{
+    width: 350px;
+    height: 250px;
+}
+
+a.button-read {
+    border: 5px solid black;
+    border-radius: 30%;
+    background-color: red;
+    color: black;
+    margin: 10px;
+    padding: 25px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    order: 3;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+a.button-read:hover{
+    background: coral;
+    color: white;
+    border-color: white;
+    outline: none;
+}
+
+}
+
+@media all and (max-width: 720px) {
+}
+
+@media all and (min-width: 720px) and (max-width: 1080px) {    
+}
+
+/*  
+@media all and (min-width: 1080px) and (max-width: 1600px) {
+
+.inner-box{  
+    border: 2px solid black;
+    background: #fbf45f;
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    top:50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.scroll {
+    overflow: auto;
+    height: 150px;
+    width: 100%;
+    padding-left: 50px;
+}
+
+h5{
+    text-align: center;
+    font-weight: 700;
+    color: black;
+    font-size: 30px;
+    text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
+    text-transform: uppercase;
+}
+
+.avatar{
+    float: right;
+    width: 15%;
+    border: 2px solid greenyellow;
+    background: #E7E9EB;
+    position: sticky;
+    top: 10px;
+    z-index: 600;
+    flex: 0 0 15%;
+}
+
+.avatar::after{
+    display: block;
+    content: '';
+    clear: left;
+}
+
+aside>details>summary {
+    text-align: right;
+    width: 300px;
+    position: sticky;
+    top: 0;
+}
+
+label, input[type='submit']{
+    display: block;
+}
+
+input:checked{
+    border: none;
+    outline: 2px solid deeppink;
+}
+
+
+blockquote{
+    padding-left: 4em;
+    font-style: italic;
+    opacity: 0.8;
+    font-family: serif;
+}
+
+.inline{
+    display: flex;
+    flex-direction: row;   
+    flex-wrap: wrap;
+    justify-content: center; 
+    flex: 0 0 25%;
+}
+
+#float > section.inline.second > div,
+#float > section.inline.second > p{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 0 0 300px;
+}
+
+/*  
+
+
+#areaNo,
+#number2{
+    margin-bottom: 20px;
+}
+
+
+.side-second>textarea{
+    height: 100px;
+}
+
+ */
